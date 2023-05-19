@@ -1,0 +1,28 @@
+
+
+.form-control:focus{
+    box-shadow: 0 0 4px 2px #212529 !important;
+    border-color: #212529;
+}
+
+.alert {
+  
+  transition: 0.3s ease-in-out !important;
+}
+
+.alert.show {
+  opacity: 1;
+  transition: 0.3s ease-in-out !important;
+}
+
+*:focus{
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 991.9px){
+
+  .action-button{
+    margin-top: 10px;
+  }
+
+}
