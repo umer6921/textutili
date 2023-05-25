@@ -50,12 +50,12 @@ export default function TextForm(props) {
         navigator.clipboard.writeText(text)
 
             .then(() => {
-                console.log('Text copied');
+                
                 toast.success('Text copied');
 
             })
             .catch((err) => {
-                console.error('Could not copy text: ', err);
+              
                 toast.error('Failed to copy text');
             });
     }
@@ -80,7 +80,7 @@ export default function TextForm(props) {
                 <h2>Your text summary</h2>
                 {/* <p>{text.split(" ").length} words and {text.length} characters</p> */}
                 {/* <p>{text ? text.split(" ").length : 0} words and {text ? text.length : 0} characters</p> */}
-                <p>{text ? text.split(" ").filter(Boolean).length : 0} words and {text ? text.replace(/\s/g, "").length : 0} characters</p>
+                <p>{text ? text.split(/\s+/).filter(Boolean).length : 0} words and {text ? text.replace(/\s/g, "").length : 0} characters</p>
 
                 <p>{text ? 0.008 * text.length : 0} minutes to read</p>
                 <div className='text-start'>
