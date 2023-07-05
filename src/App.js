@@ -49,7 +49,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      <Router basename='/textutili'>
 
         <div className="App">
 
@@ -60,7 +60,7 @@ function App() {
           <Routes>
             <Route path="/about" element={<About mode={mode}/>} />
 
-            <Route path="/textutili" element={<div className='container'>
+            <Route exact path="/textutili" element={<div className='container'>
               <TextForm heading={"Enter the text below to analyze"} mode={mode}></TextForm>
               {/* <About heading={"About us"}></About> */}
             </div>} />
