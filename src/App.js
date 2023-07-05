@@ -49,7 +49,7 @@ function App() {
 
   return (
     <>
-      <Router basename='/textutili'>
+      <Router>
 
         <div className="App">
 
