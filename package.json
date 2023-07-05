@@ -1,9 +1,9 @@
 {
   
   "name": "react-mui",
-  "homepage": "https://umer6921.github.io/textutili.github.io",
+  "homepage": "https://umer6921.github.io/textutili",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
